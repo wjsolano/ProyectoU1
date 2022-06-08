@@ -55,6 +55,111 @@ def agenteAltavoz():
             estados_objetivos['estadoPasillo1'] = 1 #ASIGNANDO ESTADO DE SILENCIO 
             print("Costo actual: "+str(costo))      #MOSTRANDO EL COSTO 
 
+    """Ciclo for para saber si se desea enviar un mensaje a Pasillo2"""
+    for localizacion2 in range(1):
+        if estadoSonidoPasillo2 == 0: #SE DESEA ENVIAR UN MENSAJE
+            print("--- Pasillo 2 ---")
+            print("Enviando mensaje a pasillo 2 por medio de Altavoz")
+            estados_objetivos['estadoPasillo2'] = 0 #ASIGNANDO ESTADO DE SONIDO
+            costo+=1                              #AUMENTANDO COSTO
+            print("Mensaje enviado por altavoz con exito")
+            print("Costo actual: "+str(costo))    #MOSTRANDO EL COSTO  
+        elif estadoSonidoPasillo2 == 1:          #SI NO SE DESEA ENVIAR UN MENSAJE
+            print("--- Pasillo 2---")
+            print("No se desea enviar mensaje")
+            estados_objetivos['estadoPasillo2'] = 1 #ASIGNANDO ESTADO DE SILENCIO 
+            print("Costo actual: "+str(costo))      #MOSTRANDO EL COSTO 
+
+    """Ciclo for para saber si se desea enviar un mensaje a Pasillo23"""
+    for localizacion3 in range(1):
+        if estadoSonidoPasillo3 == 0: #SE DESEA ENVIAR UN MENSAJE
+            print("--- Pasillo 3 ---")
+            print("Enviando mensaje a pasillo 3 por medio de Altavoz")
+            estados_objetivos['estadoPasillo3'] = 0 #ASIGNANDO ESTADO DE SONIDO
+            costo+=1                              #AUMENTANDO COSTO
+            print("Mensaje enviado por altavoz con exito")
+            print("Costo actual: "+str(costo))    #MOSTRANDO EL COSTO  
+        elif estadoSonidoPasillo3 == 1:          #SI NO SE DESEA ENVIAR UN MENSAJE
+            print("--- Pasillo 3 ---")
+            print("No se desea enviar mensaje")
+            estados_objetivos['estadoPasillo3'] = 1 #ASIGNANDO ESTADO DE SILENCIO 
+            print("Costo actual: "+str(costo))      #MOSTRANDO EL COSTO 
+
+    """Ciclo for para saber si se desea enviar un mensaje a Pasillo4"""
+    for localizacion4 in range(1):
+        if estadoSonidoPasillo4 == 0: #SE DESEA ENVIAR UN MENSAJE
+            print("--- Pasillo 4 ---")
+            print("Enviando mensaje a pasillo 4 por medio de Altavoz")
+            estados_objetivos['estadoPasillo4'] = 0 #ASIGNANDO ESTADO DE SONIDO
+            costo+=1                              #AUMENTANDO COSTO
+            print("Mensaje enviado por altavoz con exito")
+            print("Costo actual: "+str(costo))    #MOSTRANDO EL COSTO  
+        elif estadoSonidoPasillo4 == 1:          #SI NO SE DESEA ENVIAR UN MENSAJE
+            print("--- Pasillo 4 ---")
+            print("No se desea enviar mensaje")
+            estados_objetivos['estadoPasillo4'] = 1 #ASIGNANDO ESTADO DE SILENCIO 
+            print("Costo actual: "+str(costo))      #MOSTRANDO EL COSTO 
+
+    """Ciclo for para saber si se desea enviar un mensaje a Cajas"""
+    for localizacion5 in range(1):
+        if estadoSonidoCajas == 0: #SE DESEA ENVIAR UN MENSAJE
+            print("--- Cajas ---")
+            print("Enviando mensaje a las cajas por medio de Altavoz")
+            estados_objetivos['estadoCajas'] = 0 #ASIGNANDO ESTADO DE SONIDO
+            costo+=1                              #AUMENTANDO COSTO
+            print("Mensaje enviado por altavoz con exito")
+            print("Costo actual: "+str(costo))    #MOSTRANDO EL COSTO  
+        elif estadoSonidoCajas == 1:          #SI NO SE DESEA ENVIAR UN MENSAJE
+            print("--- Cajas ---")
+            print("No se desea enviar mensaje")
+            estados_objetivos['estadoCajas'] = 1 #ASIGNANDO ESTADO DE SILENCIO 
+            print("Costo actual: "+str(costo))      #MOSTRANDO EL COSTO 
+
+    """Ciclo for para saber si se desea enviar un mensaje a Estacionamiento"""
+    for localizacion6 in range(1):
+        if estadoSonidoEstacionamiento == 0: #SE DESEA ENVIAR UN MENSAJE
+            print("--- Estacionamiento ---")
+            print("Enviando mensaje al estacionamiento por medio de Altavoz")
+            estados_objetivos['estadoEstacionamiento'] = 0 #ASIGNANDO ESTADO DE SONIDO
+            costo+=1                              #AUMENTANDO COSTO
+            print("Mensaje enviado por altavoz con exito")
+            print("Costo actual: "+str(costo))    #MOSTRANDO EL COSTO  
+        elif estadoSonidoEstacionamiento == 1:          #SI NO SE DESEA ENVIAR UN MENSAJE
+            print("--- Estacionamiento ---")
+            print("No se desea enviar mensaje")
+            estados_objetivos['estadoEstacionamiento'] = 1 #ASIGNANDO ESTADO DE SILENCIO 
+            print("Costo actual: "+str(costo))      #MOSTRANDO EL COSTO
+
+    """Ciclo for para saber si se desea enviar un mensaje a Administracion"""
+    for localizacion7 in range(1):
+        if estadoSonidoAdministracion == 0: #SE DESEA ENVIAR UN MENSAJE
+            print("--- Administracion ---")
+            print("Enviando mensaje a administracion por medio de Altavoz")
+            estados_objetivos['estadoAdministracion'] = 0 #ASIGNANDO ESTADO DE SONIDO
+            costo+=1                              #AUMENTANDO COSTO
+            print("Mensaje enviado por altavoz con exito")
+            print("Costo actual: "+str(costo))    #MOSTRANDO EL COSTO  
+        elif estadoSonidoAdministracion == 1:          #SI NO SE DESEA ENVIAR UN MENSAJE
+            print("--- Administracion ---")
+            print("No se desea enviar mensaje")
+            estados_objetivos['estadoAdministracion'] = 1 #ASIGNANDO ESTADO DE SILENCIO 
+            print("Costo actual: "+str(costo))      #MOSTRANDO EL COSTO
+
+    """Ciclo for para saber si se desea enviar un mensaje a Bodega"""
+    for localizacion8 in range(1):
+        if estadoSonidoBodega == 0: #SE DESEA ENVIAR UN MENSAJE
+            print("--- Bodega ---")
+            print("Enviando mensaje a bodega por medio de Altavoz")
+            estados_objetivos['estadoBodega'] = 0 #ASIGNANDO ESTADO DE SONIDO
+            costo+=1                              #AUMENTANDO COSTO
+            print("Mensaje enviado por altavoz con exito")
+            print("Costo actual: "+str(costo))    #MOSTRANDO EL COSTO  
+        elif estadoSonidoBodega == 1:          #SI NO SE DESEA ENVIAR UN MENSAJE
+            print("--- Bodega ---")
+            print("No se desea enviar mensaje")
+            estados_objetivos['estadoBodega'] = 1 #ASIGNANDO ESTADO DE SILENCIO 
+            print("Costo actual: "+str(costo))      #MOSTRANDO EL COSTO
+
 
     #estado y costo final
     print("El estado final de cada localizacion es el siguiente: ")
