@@ -26,6 +26,25 @@ def generarExcepcion(num):
             print("Registro exitoso")
 
 """
+La siguiente funcion averigua el metodo de mensaje que el usaurio desea usar
+Puede ser por medio de voz que es el Audio o por Teclado que es escrito, recibe
+como parametro el tipo de mensaje que escribe el usuario
+"""
+def generarExcepcionMetodoMensaje(metodoMensaje):
+    if (metodoMensaje=="Audio"):
+        #En el caso de escocger audio simula que el usuario habla por el microfono
+        print("***DICIENDO MENSAJE***")
+    elif(metodoMensaje=="Teclado"):
+        #En el caso de escocger teclado simula que el usuario escribe por teclado
+        print("***ESCRIBIENDO MENSAJE***")
+    else:
+        #EN EL CASO DE NO HABER INSERTADO EL METODO CORRECTAMENTE DAR ERROR
+        raise ExcepcionPersonalizada(mensaje)
+
+            
+
+
+"""
 Se crea una funcion que sera para el agente de altavoz, el cual no recibe ningun parametro,
 todos los datos que ingresa el usuario lo hace dentro de la misma.
 """
@@ -86,6 +105,14 @@ def agenteAltavoz():
         for localizacion1 in range(1):
             if estadoSonidoPasillo1 == 0: #SE DESEA ENVIAR UN MENSAJE
                 print("--- Pasillo 1 ---")
+                try:
+                    #preguntando al usuario que tipo de mensaje desea usar
+                    metodoMensaje=input("Desea enviar el mensaje por Audio o por Teclado: ")
+                    #Enviando el tipo de mensaje a la classe excepcion mensaje
+                    generarExcepcionMetodoMensaje(metodoMensaje) 
+                except ExcepcionPersonalizada:
+                    print("Error: Ingrese el metodo de mensaje correctamente ")
+                    quit()                              #Cerrando el programa
                 print("Enviando mensaje a pasillo 1 por medio de Altavoz")
                 estados_objetivos['estadoPasillo1'] = 0 #ASIGNANDO ESTADO DE SONIDO
                 costo+=1                              #AUMENTANDO COSTO
@@ -101,6 +128,14 @@ def agenteAltavoz():
         for localizacion2 in range(1):
             if estadoSonidoPasillo2 == 0: #SE DESEA ENVIAR UN MENSAJE
                 print("--- Pasillo 2 ---")
+                try:
+                    #preguntando al usuario que tipo de mensaje desea usar
+                    metodoMensaje=input("Desea enviar el mensaje por Audio o por Teclado: ")
+                    #Enviando el tipo de mensaje a la classe excepcion mensaje
+                    generarExcepcionMetodoMensaje(metodoMensaje) 
+                except ExcepcionPersonalizada:
+                    print("Error: Ingrese el metodo de mensaje correctamente ")
+                    quit()                              #Cerrando el programa
                 print("Enviando mensaje a pasillo 2 por medio de Altavoz")
                 estados_objetivos['estadoPasillo2'] = 0 #ASIGNANDO ESTADO DE SONIDO
                 costo+=1                              #AUMENTANDO COSTO
@@ -116,6 +151,14 @@ def agenteAltavoz():
         for localizacion3 in range(1):
             if estadoSonidoPasillo3 == 0: #SE DESEA ENVIAR UN MENSAJE
                 print("--- Pasillo 3 ---")
+                try:
+                    #preguntando al usuario que tipo de mensaje desea usar
+                    metodoMensaje=input("Desea enviar el mensaje por Audio o por Teclado: ")
+                    #Enviando el tipo de mensaje a la classe excepcion mensaje
+                    generarExcepcionMetodoMensaje(metodoMensaje) 
+                except ExcepcionPersonalizada:
+                    print("Error: Ingrese el metodo de mensaje correctamente ")
+                    quit()                              #Cerrando el programa
                 print("Enviando mensaje a pasillo 3 por medio de Altavoz")
                 estados_objetivos['estadoPasillo3'] = 0 #ASIGNANDO ESTADO DE SONIDO
                 costo+=1                              #AUMENTANDO COSTO
@@ -131,6 +174,14 @@ def agenteAltavoz():
         for localizacion4 in range(1):
             if estadoSonidoPasillo4 == 0: #SE DESEA ENVIAR UN MENSAJE
                 print("--- Pasillo 4 ---")
+                try:
+                    #preguntando al usuario que tipo de mensaje desea usar
+                    metodoMensaje=input("Desea enviar el mensaje por Audio o por Teclado: ")
+                    #Enviando el tipo de mensaje a la classe excepcion mensaje
+                    generarExcepcionMetodoMensaje(metodoMensaje) 
+                except ExcepcionPersonalizada:
+                    print("Error: Ingrese el metodo de mensaje correctamente ")
+                    quit()                              #Cerrando el programa
                 print("Enviando mensaje a pasillo 4 por medio de Altavoz")
                 estados_objetivos['estadoPasillo4'] = 0 #ASIGNANDO ESTADO DE SONIDO
                 costo+=1                              #AUMENTANDO COSTO
@@ -146,6 +197,14 @@ def agenteAltavoz():
         for localizacion5 in range(1):
             if estadoSonidoCajas == 0: #SE DESEA ENVIAR UN MENSAJE
                 print("--- Cajas ---")
+                try:
+                    #preguntando al usuario que tipo de mensaje desea usar
+                    metodoMensaje=input("Desea enviar el mensaje por Audio o por Teclado: ")
+                    #Enviando el tipo de mensaje a la classe excepcion mensaje
+                    generarExcepcionMetodoMensaje(metodoMensaje) 
+                except ExcepcionPersonalizada:
+                    print("Error: Ingrese el metodo de mensaje correctamente ")
+                    quit()                              #Cerrando el programa
                 print("Enviando mensaje a las cajas por medio de Altavoz")
                 estados_objetivos['estadoCajas'] = 0 #ASIGNANDO ESTADO DE SONIDO
                 costo+=1                              #AUMENTANDO COSTO
@@ -161,6 +220,14 @@ def agenteAltavoz():
         for localizacion6 in range(1):
             if estadoSonidoEstacionamiento == 0: #SE DESEA ENVIAR UN MENSAJE
                 print("--- Estacionamiento ---")
+                try:
+                    #preguntando al usuario que tipo de mensaje desea usar
+                    metodoMensaje=input("Desea enviar el mensaje por Audio o por Teclado: ")
+                    #Enviando el tipo de mensaje a la classe excepcion mensaje
+                    generarExcepcionMetodoMensaje(metodoMensaje) 
+                except ExcepcionPersonalizada:
+                    print("Error: Ingrese el metodo de mensaje correctamente ")
+                    quit()                              #Cerrando el programa
                 print("Enviando mensaje al estacionamiento por medio de Altavoz")
                 estados_objetivos['estadoEstacionamiento'] = 0 #ASIGNANDO ESTADO DE SONIDO
                 costo+=1                              #AUMENTANDO COSTO
@@ -176,6 +243,14 @@ def agenteAltavoz():
         for localizacion7 in range(1):
             if estadoSonidoAdministracion == 0: #SE DESEA ENVIAR UN MENSAJE
                 print("--- Administracion ---")
+                try:
+                    #preguntando al usuario que tipo de mensaje desea usar
+                    metodoMensaje=input("Desea enviar el mensaje por Audio o por Teclado: ")
+                    #Enviando el tipo de mensaje a la classe excepcion mensaje
+                    generarExcepcionMetodoMensaje(metodoMensaje) 
+                except ExcepcionPersonalizada:
+                    print("Error: Ingrese el metodo de mensaje correctamente ")
+                    quit()                              #Cerrando el programa
                 print("Enviando mensaje a administracion por medio de Altavoz")
                 estados_objetivos['estadoAdministracion'] = 0 #ASIGNANDO ESTADO DE SONIDO
                 costo+=1                              #AUMENTANDO COSTO
@@ -191,6 +266,14 @@ def agenteAltavoz():
         for localizacion8 in range(1):
             if estadoSonidoBodega == 0: #SE DESEA ENVIAR UN MENSAJE
                 print("--- Bodega ---")
+                try:
+                    #preguntando al usuario que tipo de mensaje desea usar
+                    metodoMensaje=input("Desea enviar el mensaje por Audio o por Teclado: ")
+                    #Enviando el tipo de mensaje a la classe excepcion mensaje
+                    generarExcepcionMetodoMensaje(metodoMensaje) 
+                except ExcepcionPersonalizada:
+                    print("Error: Ingrese el metodo de mensaje correctamente ")
+                    quit()                              #Cerrando el programa
                 print("Enviando mensaje a bodega por medio de Altavoz")
                 estados_objetivos['estadoBodega'] = 0 #ASIGNANDO ESTADO DE SONIDO
                 costo+=1                              #AUMENTANDO COSTO
